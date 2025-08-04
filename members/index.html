@@ -1,25 +1,40 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Members Only</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MoeBucks Members Vault - Unlock exclusive healing tools, downloads, and sound therapy content.">
+  <meta name="keywords" content="members-only, Moe Healing Vault, frequency tools, MoeBucks portal, sound therapy access, healing tones, subscription content">
+  <meta name="author" content="MoeBucks Community Cloud">
+  <title>MoeBucks Members Vault</title>
+  <link rel="stylesheet" href="assets/css/vault.css" />
 </head>
 <body>
-  <h2>Members Vault</h2>
-  <p>Enter your access password:</p>
-  <input type="password" id="pw" />
-  <button onclick="check()">Unlock</button>
-  <div id="content" style="display:none;">
-    <h3>Welcome to the Private MoeBucks Zone</h3>
+  <div class="vault-wrapper">
+    <header>
+      <h1>Members-Only Vault</h1>
+      <p>Welcome to the MoeBucks Inner Circle — your healing experience begins here.</p>
+    </header>
+
+    <section class="downloads">
+      <h2>Exclusive Downloads</h2>
+      <ul>
+        <li><a href="#">963 Hz God Frequency (MP3)</a></li>
+        <li><a href="#">432 Hz Inner Peace Loop (MP3)</a></li>
+        <li><a href="#">Healing Portal Pack - Full Collection</a></li>
+      </ul>
+    </section>
+
+    <section class="upcoming">
+      <h2>Coming Soon</h2>
+      <p>🔒 369 Oscillator Tool</p>
+      <p>🔒 Trinity Healing Player (Members Only)</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 MoeBucks Members Vault. Private Access Only.</p>
+    </footer>
   </div>
-  <script>
-    function check() {
-      if (document.getElementById('pw').value === 'moebucks2025') {
-        document.getElementById('content').style.display = 'block';
-      } else {
-        alert("Access denied.");
-      }
-    }
-  </script>
 </body>
 </html>
