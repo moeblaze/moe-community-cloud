@@ -2,55 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moe Healing Portal</title>
-    <link rel="stylesheet" href="assets/css/healing.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MoeBucks Healing Portal - Experience vibrational healing frequencies, pay-per-access tools, and exclusive wellness content.">
+  <meta name="keywords" content="healing frequencies, 528hz, MoeBucks, sound therapy, Moe Healing Portal, spiritual healing, meditation tools, 963hz">
+  <meta name="author" content="MoeBucks Community Cloud">
+  <title>Moe Healing Portal | MoeBucks</title>
+  <link rel="stylesheet" href="assets/css/healing.css" />
 </head>
 <body>
+  <div class="wrapper">
     <header>
-        <h1>🎵 Moe Healing Portal</h1>
-        <p>God is Light. Heal through Frequency.</p>
+      <h1>MoeBucks Healing Portal</h1>
+      <p>Experience high-frequency transformation. Vibrational healing starts here.</p>
     </header>
 
-    <section id="free-player">
-        <h2>🔓 Free Healing Frequency: 528Hz</h2>
-        <audio controls loop>
-            <source src="assets/audio/528hz_sample.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    <section class="player-section">
+      <h2>Now Playing: 528 Hz DNA Repair</h2>
+      <audio controls loop>
+        <source src="https://moebucks-healing.s3.amazonaws.com/528hz.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
     </section>
 
-    <section id="locked-content">
-        <h2>🔒 Premium Access: Unlock More Tones</h2>
-        <p>Get full access to 963Hz, 444Hz, tone downloads, and exclusive healing animations.</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" onsubmit="unlockPremium()">
-            <input type="hidden" name="cmd" value="_donations">
-            <input type="hidden" name="business" value="moeknowmoe24@gmail.com">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="amount" value="9.99">
-            <input type="hidden" name="item_name" value="Moe Healing Portal Premium Access">
-            <button type="submit">💸 Unlock Healing Access - $9.99</button>
-        </form>
+    <section class="subscribe">
+      <h2>Join the Healing Movement</h2>
+      <p>Unlock more tones, healing tools, and downloads.</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+        <button type="submit" class="btn-pay">Donate & Access Members Tools</button>
+      </form>
     </section>
 
-    <section id="premium-content" style="display:none;">
-        <h2>✅ Premium Healing Frequencies</h2>
-        <audio controls loop>
-            <source src="assets/audio/963hz_sample.mp3" type="audio/mpeg">
-        </audio>
-        <p><a href="assets/audio/full_healing_pack.zip" download>📦 Download Full Healing Pack</a></p>
-    </section>
-
-    <script>
-        function unlockPremium() {
-            localStorage.setItem("healingUnlocked", "true");
-        }
-        window.onload = function() {
-            if (localStorage.getItem("healingUnlocked") === "true") {
-                document.getElementById("premium-content").style.display = "block";
-            }
-        }
-    </script>
+    <footer>
+      <p>&copy; 2025 MoeBucks Healing Experience. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
