@@ -1,1 +1,25 @@
-<!DOCTYPE html><html><head><title>Members</title></head><body><h2>Members Only</h2></body></html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Members Only</title>
+</head>
+<body>
+  <h2>Members Vault</h2>
+  <p>Enter your access password:</p>
+  <input type="password" id="pw" />
+  <button onclick="check()">Unlock</button>
+  <div id="content" style="display:none;">
+    <h3>Welcome to the Private MoeBucks Zone</h3>
+  </div>
+  <script>
+    function check() {
+      if (document.getElementById('pw').value === 'moebucks2025') {
+        document.getElementById('content').style.display = 'block';
+      } else {
+        alert("Access denied.");
+      }
+    }
+  </script>
+</body>
+</html>
