@@ -1,0 +1,23 @@
+
+name: Deploy MoeBucks Community Cloud to Azure
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Upload Static Web App
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: 310b3de24ffd82065ac4be4fe303386279e03ccb5e385b237bc5ca6d7c0703d602-358a09b0-3c87-4d52-bfef-3227de3cc39701002190efdc1410
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "/"
+          output_location: "/"
