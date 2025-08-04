@@ -1,0 +1,83 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: white;
+  color: #111;
+}
+header {
+  background: black;
+  color: gold;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  animation: slideIn 1s ease-out;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 10px;
+}
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background: #c00;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  border: 3px solid gold;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem;
+}
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: gold;
+}
+.buy-button {
+  margin-top: 0.5rem;
+  padding: 8px 14px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

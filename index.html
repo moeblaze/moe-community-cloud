@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="MoeBucks Community Cloud: Your gateway to monetizable web apps for healing, business, and design." />
+  <meta property="og:title" content="MoeBucks Community Cloud" />
+  <meta property="og:description" content="Explore MoeBucks tools: Healing Portal, Credit Repair, Website Builder & more." />
+  <meta property="og:image" content="assets/images/preview.png" />
+  <title>MoeBucks Community Cloud</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="animated">🦌 MoeBucks Community Cloud Store</h1>
+</header>
+
+<section class="filter-buttons">
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('retail')">Retail</button>
+  <button onclick="filterCategory('design')">Design</button>
+  <button onclick="filterCategory('business')">Business</button>
+</section>
+
+<section class="grid">
+  <div class="card" data-category="design">
+    <img src="https://via.placeholder.com/300x150?text=Coloring+Book" onclick="openLightbox(this.src)" alt="Coloring Book Creator" />
+    <div class="card-content">
+      <h3>Coloring Book Creator</h3>
+      <p>Turn your photos into printable coloring books using A.I.</p>
+      <button class="buy-button" onclick="window.location.href='https://buy.stripe.com/test123'">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" data-category="retail">
+    <img src="https://via.placeholder.com/300x150?text=File+Converter" onclick="openLightbox(this.src)" alt="File Converter Tool" />
+    <div class="card-content">
+      <h3>File Converter</h3>
+      <p>Convert files across formats effortlessly with modern UI.</p>
+      <button class="buy-button" onclick="window.location.href='https://buy.stripe.com/test234'">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" data-category="business">
+    <img src="https://via.placeholder.com/300x150?text=Website+Builder" onclick="openLightbox(this.src)" alt="Website Builder" />
+    <div class="card-content">
+      <h3>Website Builder</h3>
+      <p>Create dynamic websites with Moe's drag-and-drop simplicity.</p>
+      <button class="buy-button" onclick="window.location.href='https://buy.stripe.com/test345'">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" onclick="this.style.display='none'">
+  <img id="lightbox-img" src="" alt="Preview" />
+</div>
+
+<footer>
+  <p>&copy; 2025 MoeBucks Community Cloud. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Support</a></p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
