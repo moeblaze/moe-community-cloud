@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moe Healing Portal</title>
+    <link rel="stylesheet" href="assets/css/healing.css">
+</head>
+<body>
+    <header>
+        <h1>🎵 Moe Healing Portal</h1>
+        <p>God is Light. Heal through Frequency.</p>
+    </header>
+
+    <section id="free-player">
+        <h2>🔓 Free Healing Frequency: 528Hz</h2>
+        <audio controls loop>
+            <source src="assets/audio/528hz_sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="locked-content">
+        <h2>🔒 Premium Access: Unlock More Tones</h2>
+        <p>Get full access to 963Hz, 444Hz, tone downloads, and exclusive healing animations.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" onsubmit="unlockPremium()">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="moeknowmoe24@gmail.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="amount" value="9.99">
+            <input type="hidden" name="item_name" value="Moe Healing Portal Premium Access">
+            <button type="submit">💸 Unlock Healing Access - $9.99</button>
+        </form>
+    </section>
+
+    <section id="premium-content" style="display:none;">
+        <h2>✅ Premium Healing Frequencies</h2>
+        <audio controls loop>
+            <source src="assets/audio/963hz_sample.mp3" type="audio/mpeg">
+        </audio>
+        <p><a href="assets/audio/full_healing_pack.zip" download>📦 Download Full Healing Pack</a></p>
+    </section>
+
+    <script>
+        function unlockPremium() {
+            localStorage.setItem("healingUnlocked", "true");
+        }
+        window.onload = function() {
+            if (localStorage.getItem("healingUnlocked") === "true") {
+                document.getElementById("premium-content").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
