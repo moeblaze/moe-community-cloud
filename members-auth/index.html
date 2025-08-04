@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="MoeBucks Members Vault - Secure healing portal access">
+  <meta name="keywords" content="MoeBucks, members vault, healing tools, frequency access, subscription healing, secure healing downloads">
+  <meta name="author" content="MoeBucks Community Cloud">
+  <title>Members Vault Login</title>
+  <link rel="stylesheet" href="assets/css/vault.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="assets/js/auth.js" defer></script>
+</head>
+<body>
+  <div class="vault-wrapper">
+    <header>
+      <h1>MoeBucks Members Login</h1>
+      <p>Log in to access your exclusive healing frequencies and tools.</p>
+    </header>
+    <div id="auth-container">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p>Not a member? <a href="#" onclick="signup()">Sign up here</a></p>
+    </div>
+    <div id="content" style="display:none;">
+      <h2>Welcome to the Members Vault</h2>
+      <ul>
+        <li><a href="#">963 Hz God Frequency (MP3)</a></li>
+        <li><a href="#">432 Hz Peace Loop</a></li>
+        <li><a href="#">Trinity Tones (Members Only)</a></li>
+      </ul>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+</body>
+</html>
